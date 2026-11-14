@@ -1,8 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebijakan Privasi – SiniCrita</title>
+  <style>
+    :root {
+      --primary: #4DD5CE;
+      --primary-dark: #2bb8b0;
+      --text: #1a1a2e;
+      --muted: #555;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .logo {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    header .tagline {
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+
+    header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .meta {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    .meta span { display: flex; align-items: center; gap: 6px; }
+    .meta span::before { font-size: 1rem; }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    ul li {
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding: 5px 0 5px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '•';
+      color: var(--primary-dark);
+      font-weight: 700;
+      position: absolute;
+      left: 4px;
+    }
+
+    .highlight-box {
+      background: #f0fdfc;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      font-size: 0.9rem;
+    }
+
+    th {
+      background: #f0fdfc;
+      text-align: left;
+      padding: 10px 14px;
+      color: var(--primary-dark);
+      font-weight: 600;
+      border-bottom: 2px solid var(--border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .contact-box {
+      background: linear-gradient(135deg, #f0fdfc, #e6fffd);
+      border: 1px solid var(--primary);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      color: var(--primary-dark);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 20px 18px; }
+      h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🌊 SiniCrita</div>
+  <div class="tagline">Cerita Anonim – Berbagi Tanpa Identitas</div>
+  <div class="badge">Kebijakan Privasi</div>
+</header>
+
+<main>
+
+  <div class="meta">
+    <span>📅 Berlaku sejak: 14 November 2026</span>
+    <span>🔄 Terakhir diperbarui: 14 November 2026</span>
+    <span>🌐 Versi: 1.0</span>
+  </div>
+
+  <!-- 1. Pendahuluan -->
+  <section>
+    <h2><span class="icon">📋</span> 1. Pendahuluan</h2>
+    <p>
+      Selamat datang di <strong>SiniCrita</strong> ("kami", "kita", atau "aplikasi"). SiniCrita adalah platform berbagi cerita secara anonim yang memungkinkan pengguna untuk terhubung, berbagi pengalaman, dan berkomunikasi melalui fitur random matching dan panggilan personal, tanpa mengungkapkan identitas asli.
+    </p>
+    <p>
+      Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi Anda saat menggunakan aplikasi SiniCrita. Dengan menggunakan aplikasi ini, Anda menyetujui praktik yang dijelaskan dalam kebijakan ini.
+    </p>
+    <div class="highlight-box">
+      📌 Kebijakan ini berlaku untuk aplikasi mobile SiniCrita di platform Android dan semua layanan terkait.
+    </div>
+  </section>
+
+  <!-- 2. Data yang Dikumpulkan -->
+  <section>
+    <h2><span class="icon">🗂️</span> 2. Data yang Kami Kumpulkan</h2>
+    <p>Kami mengumpulkan beberapa jenis data untuk menyediakan dan meningkatkan layanan kami:</p>
+
+    <table>
+      <tr>
+        <th>Jenis Data</th>
+        <th>Detail</th>
+        <th>Keperluan</th>
+      </tr>
+      <tr>
+        <td><strong>Data Akun</strong></td>
+        <td>Nama pengguna (anonim/alias), alamat email, kata sandi terenkripsi</td>
+        <td>Autentikasi dan identifikasi akun</td>
+      </tr>
+      <tr>
+        <td><strong>Data Percakapan</strong></td>
+        <td>Pesan teks, durasi sesi, timestamp interaksi</td>
+        <td>Menyediakan fitur chat dan matching</td>
+      </tr>
+      <tr>
+        <td><strong>Data Audio</strong></td>
+        <td>Akses mikrofon selama sesi panggilan (tidak direkam/disimpan)</td>
+        <td>Fitur panggilan suara real-time</td>
+      </tr>
+      <tr>
+        <td><strong>Data Rating & Feedback</strong></td>
+        <td>Penilaian sesi (bintang), komentar opsional</td>
+        <td>Peningkatan kualitas layanan</td>
+      </tr>
+      <tr>
+        <td><strong>Data Perangkat</strong></td>
+        <td>Token FCM, versi OS, jenis perangkat</td>
+        <td>Pengiriman notifikasi push</td>
+      </tr>
+      <tr>
+        <td><strong>Data Jaringan</strong></td>
+        <td>Status koneksi internet dan jaringan</td>
+        <td>Memastikan kualitas koneksi real-time</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- 3. Cara Kami Menggunakan Data -->
+  <section>
+    <h2><span class="icon">⚙️</span> 3. Cara Kami Menggunakan Data</h2>
+    <p>Data yang kami kumpulkan digunakan untuk:</p>
+    <ul>
+      <li>Menyediakan fitur random matching antar pengguna secara anonim</li>
+      <li>Memfasilitasi sesi panggilan suara personal antar pengguna</li>
+      <li>Mengirim notifikasi push terkait aktivitas akun dan sesi (via Firebase Cloud Messaging)</li>
+      <li>Memproses dan menyimpan rating serta feedback sesi</li>
+      <li>Memantau dan meningkatkan kinerja serta keamanan aplikasi</li>
+      <li>Mematuhi kewajiban hukum yang berlaku</li>
+      <li>Mencegah penyalahgunaan, penipuan, dan aktivitas yang melanggar ketentuan layanan</li>
+    </ul>
+  </section>
+
+  <!-- 4. Pihak Ketiga -->
+  <section>
+    <h2><span class="icon">🤝</span> 4. Layanan Pihak Ketiga</h2>
+    <p>Kami menggunakan layanan pihak ketiga yang memiliki kebijakan privasi masing-masing:</p>
+
+    <table>
+      <tr>
+        <th>Layanan</th>
+        <th>Penyedia</th>
+        <th>Fungsi</th>
+      </tr>
+      <tr>
+        <td><strong>Firebase Authentication</strong></td>
+        <td>Google LLC</td>
+        <td>Autentikasi dan manajemen akun pengguna</td>
+      </tr>
+      <tr>
+        <td><strong>Firebase Cloud Messaging (FCM)</strong></td>
+        <td>Google LLC</td>
+        <td>Pengiriman notifikasi push</td>
+      </tr>
+      <tr>
+        <td><strong>Firebase Firestore / Realtime DB</strong></td>
+        <td>Google LLC</td>
+        <td>Penyimpanan data real-time</td>
+      </tr>
+      <tr>
+        <td><strong>WebRTC</strong></td>
+        <td>Open Source</td>
+        <td>Komunikasi audio peer-to-peer</td>
+      </tr>
+    </table>
+
+    <p style="margin-top: 14px;">
+      Kebijakan privasi Google dapat dilihat di: <a href="https://policies.google.com/privacy" style="color: var(--primary-dark);" target="_blank">policies.google.com/privacy</a>
+    </p>
+  </section>
+
+  <!-- 5. Anonimitas -->
+  <section>
+    <h2><span class="icon">🎭</span> 5. Perlindungan Anonimitas</h2>
+    <p>
+      SiniCrita dirancang dengan prinsip <strong>privacy by design</strong>. Kami tidak pernah mengungkapkan identitas asli pengguna kepada pengguna lain. Fitur anonim kami memastikan:
+    </p>
+    <ul>
+      <li>Nama asli tidak pernah ditampilkan kepada pengguna lain</li>
+      <li>Nomor telepon tidak dikumpulkan atau dibagikan</li>
+      <li>Lokasi pengguna tidak dilacak atau dibagikan</li>
+      <li>Sesi panggilan tidak direkam oleh sistem kami</li>
+      <li>Pengguna dapat menghapus akun dan data mereka kapan saja</li>
+    </ul>
+  </section>
+
+  <!-- 6. Izin Aplikasi -->
+  <section>
+    <h2><span class="icon">🔐</span> 6. Izin yang Diminta Aplikasi</h2>
+    <table>
+      <tr>
+        <th>Izin (Permission)</th>
+        <th>Alasan Dibutuhkan</th>
+      </tr>
+      <tr>
+        <td><code>INTERNET</code></td>
+        <td>Koneksi ke server dan layanan real-time</td>
+      </tr>
+      <tr>
+        <td><code>RECORD_AUDIO</code></td>
+        <td>Fitur panggilan suara — hanya aktif saat sesi berlangsung</td>
+      </tr>
+      <tr>
+        <td><code>MODIFY_AUDIO_SETTINGS</code></td>
+        <td>Pengaturan speaker/mikrofon selama panggilan</td>
+      </tr>
+      <tr>
+        <td><code>ACCESS_NETWORK_STATE</code></td>
+        <td>Memantau status koneksi internet</td>
+      </tr>
+      <tr>
+        <td><code>BLUETOOTH / BLUETOOTH_CONNECT</code></td>
+        <td>Mendukung headset Bluetooth selama panggilan</td>
+      </tr>
+      <tr>
+        <td><code>MANAGE_OWN_CALLS</code></td>
+        <td>Manajemen sesi panggilan di sistem Android</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- 7. Retensi Data -->
+  <section>
+    <h2><span class="icon">🗄️</span> 7. Penyimpanan & Retensi Data</h2>
+    <ul>
+      <li>Data akun disimpan selama akun aktif digunakan</li>
+      <li>Riwayat percakapan disimpan maksimal <strong>90 hari</strong> setelah sesi berakhir</li>
+      <li>Data rating dan feedback disimpan untuk keperluan analitik layanan</li>
+      <li>Token FCM diperbarui otomatis oleh sistem dan tidak disimpan permanen</li>
+      <li>Saat akun dihapus, seluruh data pengguna dihapus dalam 30 hari kerja</li>
+    </ul>
+  </section>
+
+  <!-- 8. Hak Pengguna -->
+  <section>
+    <h2><span class="icon">⚖️</span> 8. Hak Pengguna</h2>
+    <p>Sebagai pengguna, Anda memiliki hak untuk:</p>
+    <ul>
+      <li><strong>Akses:</strong> Meminta salinan data pribadi yang kami simpan tentang Anda</li>
+      <li><strong>Koreksi:</strong> Memperbarui atau memperbaiki data yang tidak akurat</li>
+      <li><strong>Penghapusan:</strong> Meminta penghapusan akun dan seluruh data Anda</li>
+      <li><strong>Pembatasan:</strong> Meminta pembatasan pemrosesan data dalam kondisi tertentu</li>
+      <li><strong>Portabilitas:</strong> Mendapatkan data Anda dalam format yang dapat dibaca mesin</li>
+    </ul>
+    <p style="margin-top: 10px;">Untuk menggunakan hak-hak ini, hubungi kami melalui informasi kontak di bawah.</p>
+  </section>
+
+  <!-- 9. Keamanan -->
+  <section>
+    <h2><span class="icon">🛡️</span> 9. Keamanan Data</h2>
+    <p>Kami menerapkan langkah-langkah keamanan teknis dan organisasi untuk melindungi data Anda, meliputi:</p>
+    <ul>
+      <li>Enkripsi data saat transmisi menggunakan protokol HTTPS/TLS</li>
+      <li>Kata sandi pengguna di-hash menggunakan algoritma yang aman (tidak disimpan dalam teks biasa)</li>
+      <li>Akses ke database dibatasi hanya untuk sistem yang berwenang</li>
+      <li>Komunikasi audio menggunakan enkripsi end-to-end WebRTC</li>
     </ul>
     <div class="highlight-box">
       ⚠️ Meskipun kami berusaha semaksimal mungkin, tidak ada metode transmisi data melalui internet yang 100% aman. Kami tidak dapat menjamin keamanan mutlak terhadap serangan siber yang tidak terduga.
     </div>
   </section>
+
   <!-- 10. Anak-anak -->
   <section>
     <h2><span class="icon">👶</span> 10. Perlindungan Anak</h2>
@@ -10,6 +427,7 @@
       Aplikasi SiniCrita <strong>tidak ditujukan untuk pengguna di bawah usia 17 tahun</strong>. Kami tidak secara sengaja mengumpulkan data pribadi dari anak-anak di bawah usia tersebut. Jika Anda mengetahui bahwa seorang anak di bawah 17 tahun telah memberikan data kepada kami, segera hubungi kami untuk penghapusan data.
     </p>
   </section>
+
   <!-- 11. Perubahan Kebijakan -->
   <section>
     <h2><span class="icon">📝</span> 11. Perubahan Kebijakan Privasi</h2>
@@ -20,6 +438,7 @@
       Tanggal "Terakhir diperbarui" di bagian atas halaman ini mencerminkan kapan perubahan terakhir dilakukan. Penggunaan berkelanjutan atas aplikasi setelah perubahan dianggap sebagai persetujuan Anda.
     </p>
   </section>
+
   <!-- 12. Kontak -->
   <section>
     <h2><span class="icon">📬</span> 12. Hubungi Kami</h2>
@@ -30,9 +449,12 @@
       <p style="margin-top: 10px; font-size: 0.85rem; color: var(--muted);">Atau melalui fitur "Hubungi Kami" di dalam aplikasi SiniCrita.</p>
     </div>
   </section>
+
 </main>
+
 <footer>
   &copy; 2026 SiniCrita. Seluruh hak dilindungi. &nbsp;|&nbsp; Kebijakan Privasi berlaku sejak 14 November 2026.
 </footer>
+
 </body>
 </html>
